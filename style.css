@@ -200,7 +200,7 @@ nav ul li a:hover{
 
 .navigation{
   float: right;
-  width: 25%;
+  width: 30%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -208,3 +208,87 @@ nav ul li a:hover{
   padding: 10px 0;
 }
 
+#body
+{
+    width: 100%;
+    height: auto;  
+}
+
+#card
+{
+    margin: 30px;
+    padding: 15px;
+}
+#card .box1
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    padding: 15px;
+}
+
+#card .box1 .card1
+{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+#card .box1 .card2
+{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+#card .box1 .card3
+{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+#card .box1 .card4
+{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+#card .box1 .card5
+{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+#card .box1 .card6
+{
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+}
