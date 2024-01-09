@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="admin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+  <div class="whole">
+    <img src="logo.jpg" id="logo" height="100px" width="250px"><br>
+    <label style="font-size: 40px;">Welcome Admin</label><br>
+    <label style="font-size: 30px;">Use your gmail acocunt</label>
+    <form action="action_page.php" method="post">
+        <div class="info">
+
+        <label  for="Email" style="font-size: 20px;"><b>Email: </b></label>
+        <input style="margin: 10px; padding: 5px;" type="email" id="email" name="email" required><br>
+        <a style="color: rgb(74, 66, 153);" href="#">Forget email?</a><br><br>
+
+        <label for="Password" style="font-size: 20px;"><b>Password: </b></label>
+        <input style="margin: 10px; padding: 5px;" type="password" id="password" name="password" required><br>
+        <a style="color: rgb(74, 66, 153);" href="#">Forget password?</a><br><br>
+
+        <button class="Login" type="submit">Login</button>
+    </div>
+</div>
+</form>
+</body>
+</html>

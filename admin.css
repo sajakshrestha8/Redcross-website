@@ -1,0 +1,35 @@
+.info{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.Login{
+    background-color: #c72828;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    float: center;
+}
+
+.whole{
+    margin: 100px;
+    margin-left: 400px;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    text-align: center;
+    font: 400 16px georgia;
+}
+
