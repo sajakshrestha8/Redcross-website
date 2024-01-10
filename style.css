@@ -17,7 +17,7 @@
   .donate {
     float: right;
     color: white;
-    background-color: #c90808;
+    background-color: #EE3124;
     border: none;
     height: 25px;
     width: 105px;
@@ -291,4 +291,31 @@ nav ul li a:hover{
     text-align: center;
     border: 1px solid black;
     justify-content: center;
+}
+
+.news{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  aspect-ratio: 4/3 auto;
+}
+
+.formheader{
+  display: block;
+  border-width: 5px;
+  color: #ffffff;
+  border: 5px solid rgb(243, 43, 43);
+  background-color: #EE3124;
+  border-radius: 15px;
+  text-align: center;
+  height: 35px;
+}
+
+.formsubmit{
+  border: 5px solid rgb(243, 43, 43);
+  background-color:#EE3124 ;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 30px;
 }
