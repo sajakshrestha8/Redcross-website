@@ -20,9 +20,14 @@
     float: center;
 }
 
+.Login:hover{
+    transform: scale(1.2);
+    transition: 0.3s; 
+}
+
 .whole{
     margin: 100px;
-    margin-left: 400px;
+    margin-left: 500px;
     width: 50%;
     border: 1px solid gray;
     border-radius: 5px;
@@ -33,3 +38,12 @@
     font: 400 16px georgia;
 }
 
+.backimg{
+    height: 20px;
+    width: 40px;
+}
+
+.backimg:hover{
+    transform: scale(1.2); 
+    transition: 0.3s;
+}
