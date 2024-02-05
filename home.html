@@ -7,13 +7,13 @@
     
     <body>
         <div>
-            <img src="logo.jpg" alt="logo" height="150" class="image">   
+            <img src="image/logo.jpg" alt="logo" height="150" class="image">   
             
             <div class="navigation">
-                <img  src="32211021-hotline-button.jpg" alt="donate img" height="100" width="100">
+                <img  src="image/hotline.png" alt="donate img" height="90" width="90">
             <p class="hotlineN"><b>1130</b></p>
             <button type="button" onclick="window.location.href='Donate.html';" class="donate" ><b>Donate Now</b></button> 
-            <img src="flag.png" name="flag" height="50" width="60">
+            <img src="image/flag.png" name="flag" height="50" width="60">
         </div>  
         </div>    
 
@@ -24,7 +24,7 @@
                 <li><a href="About.html"><b>About Us</b></a></li>
                 <li><a href="Work.html"><b>What do we do?</b></a></li>
                 <li><a href="News.html"><b>News and Updates</b></a></li>
-                <li><a href="Member.html"><b>Want to be Member?</b></a></li>
+                <li><a href="Member.html"><b>Get involved?</b></a></li>
                 <input type="text" placeholder="Search something...." aria-label="Search" id="Search">
                 <button type="submit">Search</button>
                 <li><a href="Adminlogin.html"><b>Admin</b></a></li>
@@ -39,13 +39,13 @@
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <a href="News.html"><img src="Rcampaign.jpg" style="width:100%"></a>
+      <a href="News.html"><img src="image/Rcampaign.jpg" style="width:100%"></a>
       <div class="text">Caption Two</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <a href="News.html"><img src="Volunteer_Convention_2023_Cover.jpg" style="width:100%"></a>
+      <a href="News.html"><img src="image/Volunteer_Convention_2023_Cover.jpg" style="width:100%"></a>
       <div class="text">Caption Three</div>
     </div>
   
@@ -91,11 +91,33 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
   </script>
+  <script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("SearchForm");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
 
         </div>
 
         <footer>
-          <img src="Facebook.png" alt="Facebook" class="socialmedia">
+          <h3 style="color: white; font-family: Poppins;">You can find our different branches through this map</h2><br><br>
+          <img src="image/youtube.png" alt="youtube" class="socialmedia">
+          <img src="image/Facebook.png" alt="Facebook" class="socialmedia">
+          <img src="image/thumbnail.jpeg" alt="map" class="map">
         </footer>
     </body>
 </html>
