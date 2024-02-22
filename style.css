@@ -1,3 +1,10 @@
+body{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .a {
     /* text-align: right; */
     justify-content: right;
@@ -47,6 +54,7 @@ nav{
   padding: 2px 0;
   z-index: 10;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  /* position: sticky; */
   /* margin-top: 1rem; */
 }
 
@@ -588,7 +596,7 @@ footer{
   padding-top: 20rem;
   margin-left: 5rem;
   height: 20rem;
-  width: 15rem;
+  width: 20rem;
   padding-top: 0.5rem;
   box-shadow: 0 10px 10px 0 rgb(37, 35, 35);
 }
@@ -677,4 +685,75 @@ footer{
   margin-left: 4rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 0.4rem;
+}
+
+.requirementhead{
+  font-family: Poppins;
+  font-size: 40px;
+  margin-left: 28rem;
+  margin-top: 2rem;
+}
+
+.requirementbody{
+  font-family: Poppins;
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.imageheader{
+  margin-left: 9rem;
+  font-family: Poppins;
+  font-size: 20px;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.donor{
+  height: 20rem;
+  margin-left: 9rem;
+  margin-top: -13rem;
+}
+
+.desc{
+  float: right;
+  margin-left: 30rem;
+  margin-right: 9rem;
+  margin-top: 10rem;
+}
+
+
+.container1{
+  display: inline-block;
+  margin-top: 8rem;
+  margin-left: 0.1rem;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+  margin: 10px 0;
+}
+footer .col1
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer .col2
+{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer-bottom{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }

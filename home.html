@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript" src="nav.js"></script>
         <link rel="stylesheet" href="style.css" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
     </head>
     
     <body>
-
-
-        <nav class="hover" id="SearchForm" onsubmit="return validateSearch()">
-            <ul>
-              <img src="image/logo.jpg" alt="logo" height="150" class="image">
-                <li><a href="home.html"><b>Home</b></a></li>
-                <li><a href="blood.html"><b>Give Blood</b></a></li>
-                <li><a href="News.html"><b>News and Updates</b></a></li>
-                <li><a href="Member.html"><b>Get involved?</b></a></li>
-                <li><a href="About.html"><b>About Us</b></a></li>
-                <li><a href="Contact.html"><b>Contact Us</b></a></li>
-                
-            </ul>
-            <button type="submit" class="searchbtn"><img src="Image/1024px-Search_Icon.svg.png" alt="seach" class="search"></button>
-        </nav><br><br>
+      <script type=module src=try.js></script>
+      <my-header></my-header>
+      <br><br>
 
         </style>  
         <!-- Slideshow container -->
@@ -83,33 +72,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
   </script>
-  <script>
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.getElementById("SearchForm");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-  </script>
-
-        </div>
-
-        <footer>
-          <h3 style="color: white; font-family: Poppins;">You can find our different branches through this map</h2><br><br>
-          <img src="image/youtube.png" alt="youtube" class="socialmedia">
-          <img src="image/Facebook.png" alt="Facebook" class="socialmedia">
-          <img src="image/thumbnail.jpeg" alt="map" class="map">
-        </footer>
+      <script src=footer.js></script>
+      <my-footer></my-footer>
+      
     </body>
 </html>
