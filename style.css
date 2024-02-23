@@ -54,8 +54,7 @@ nav{
   padding: 2px 0;
   z-index: 10;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  /* position: sticky; */
-  /* margin-top: 1rem; */
+  position: fixed;
 }
 
 .image{
@@ -122,9 +121,10 @@ nav ul li a:hover{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 750px;
+  max-width: 60%;
   position: relative;
   margin: auto;
+  margin-top: 5rem;
   aspect-ratio: 4/3 auto;
 }
 
@@ -588,8 +588,9 @@ footer{
 
 .container{
   display: inline-block;
-  margin-top: 8rem;
+  margin-top: 10rem;
   margin-left: 7rem;
+  margin-bottom: 3rem;
 }
 
 .doanteblood{
@@ -619,17 +620,17 @@ footer{
 .givebloodbody{
   font-family: Poppins;
   font-size: 15px;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-right: 2rem;
 }
 
 .doantebloodbtn{
   background-color:#d12114 ;
   color: rgb(255, 255, 255);
-  border-radius: 10px;
-  height: 20px;
+  border-radius: 5px;
+  height:1.5rem;
   width: 40%;
-  margin-left: 4rem;
+  margin-left: 6rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 3.2rem;
 }
@@ -651,6 +652,7 @@ footer{
   font-size: 40px;
   color: white;
   margin-left: 10rem;
+  padding-top: 2rem;
 }
 
 .gbloodheader{
@@ -661,7 +663,7 @@ footer{
 }
 
 .headermargin{
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .bodymargin{
@@ -679,10 +681,10 @@ footer{
 .doantebloodbtn1{
   background-color:#d12114 ;
   color: rgb(255, 255, 255);
-  border-radius: 10px;
-  height: 20px;
+  border-radius: 5px;
+  height: 1.5rem;
   width: 40%;
-  margin-left: 4rem;
+  margin-left: 6rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 0.4rem;
 }
@@ -756,4 +758,105 @@ footer .col2
   text-align: center;
   justify-content: center;
   margin-bottom: 10px;
+}
+
+.headermargin1{
+  margin-top: 2rem;
+  background-color: #000000;
+  opacity: 0.8;
+  margin-left: 2.5rem;
+  margin-right: 45rem;
+  height: 49.5rem;
+  padding-top: 8rem;
+}
+
+.givebloodheader1{
+  font-family: Poppins;
+  font-size: 60px;
+  color: white;
+  margin-left: 5rem;
+  padding-top: 5rem;
+}
+
+.gbloodheader1{
+  font-family: Poppins;
+  font-size: 25px;
+  color: white;
+  margin-left: 5rem;
+}
+
+.bodymargin1{
+  margin-top: 3rem;
+}
+
+.maphead{
+  font-family: Poppins;
+  color: white;
+  font-size: 20px;
+  margin-left: 9rem;
+}
+
+.info1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contactinfo1{
+  padding-right : 20px;
+  margin-left: 50px;
+  margin-top: 1rem;
+}
+
+.contacttitle1{
+  height: 100%;
+  color: white;
+  width: 30%;
+  font-family: Poppins;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.contactbody1{
+  color: white;
+  font-family: Poppins;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.maphead1{
+  font-family: Poppins;
+  color: white;
+  font-size: 20px;
+  margin-left: 5rem;
+}
+
+.maphead2{
+  font-family: Poppins;
+  color: white;
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+
+.image-container{
+  display: inline;
+}
+
+.icon-logo{
+  height: 49px;
+  margin-right: 10px;
+}
+
+.icon-logo1{
+  height: 60px;
+  margin-right: 10px;
+}
+
+.icon-logo:hover{
+  opacity: 0.7;
+}
+
+.icon-logo1:hover{
+  opacity: 0.7;
 }

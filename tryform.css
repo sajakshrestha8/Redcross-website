@@ -1,0 +1,27 @@
+.formheader{
+    font-family: Poppins;
+    font-size: 20px;
+    margin-left: 7rem;
+}
+
+.First-name{
+    border-radius: 30px;
+    margin-top: 1rem;
+    height: 2rem;
+    width: 20rem;
+}
+
+.Submit{
+    border-radius: 30px;
+    height: 1.8rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+
+.container{
+    margin-left: 40rem;
+    margin-top: 10rem;
+}
