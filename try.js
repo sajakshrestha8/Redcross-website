@@ -3,7 +3,7 @@ class sajak extends HTMLElement{
         this.innerHTML = `<header>
         <nav class="hover" id="SearchForm" onsubmit="return validateSearch()">
             <ul>
-              <img src="image/logo.png" alt="logo" height="150" class="image">
+              <img src="Image/logo.png" alt="logo" height="150" class="image">
                 <li><a href="home.html"><b>Home</b></a></li>
                 <li><a href="blood.html"><b>Give Blood</b></a></li>
                 <li><a href="News.html"><b>News and Updates</b></a></li>
