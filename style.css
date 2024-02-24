@@ -588,7 +588,7 @@ footer{
 
 .container{
   display: inline-block;
-  margin-top: 10rem;
+  margin-top: 2rem;
   margin-left: 7rem;
   margin-bottom: 3rem;
 }
@@ -633,6 +633,7 @@ footer{
   margin-left: 6rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 3.2rem;
+  cursor: pointer;
 }
 
 .doantebloodbtn:hover{
@@ -687,6 +688,7 @@ footer{
   margin-left: 6rem;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-top: 0.4rem;
+  cursor: pointer;
 }
 
 .requirementhead{
@@ -859,4 +861,139 @@ footer .col2
 
 .icon-logo1:hover{
   opacity: 0.7;
+}
+
+.training{
+  width: 100%;
+  height: 50rem;
+}
+
+.headermargin2{
+  margin-top: 2rem;
+  background-color: #000000;
+  opacity: 0.8;
+  margin-left: 5.8rem;
+  margin-right: 45rem;
+  height: 25rem;
+  padding-top: 5.5rem;
+  margin-top: 2.6rem;
+}
+
+.givebloodheader2{
+  font-family: Poppins;
+  font-size: 50px;
+  color: white;
+  margin-left: 5rem;
+}
+
+.CPR{
+  height: 20rem;
+  margin-left: 9rem;
+  margin-top: -13rem;
+}
+
+.desc-1{
+  float: right;
+  margin-left: 35rem;
+  margin-right: 9rem;
+  margin-top: 10rem;
+}
+
+.doanteblood-img{
+  margin-left: 5rem;
+  height: 20rem;
+  width: 20rem;
+  box-shadow: 0 10px 10px 0 rgb(52, 48, 48);
+}
+
+
+.container-text{
+  background-color: white;
+  margin-top: 18rem;
+  height: 4rem;
+  border: white;
+  width: 80%;
+  margin-left: -0.2rem;
+}
+
+.container-text-1{
+  font-family: Poppins;
+  font-size: 25px;
+  color: red;
+  padding-left: 2rem;
+}
+
+.container-text-2{
+  font-family: Poppins;
+  font-size: 25px;
+  color: red;
+  padding-left: 6rem;
+}
+
+.container-text-3{
+  font-family: Poppins;
+  font-size: 25px;
+  color: red;
+  padding-left: 4rem;
+}
+
+.nexticon{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-left: 8rem;
+  border: 2px solid rgb(254, 36, 36);
+  background-color: transparent;
+}
+
+.nexticon:hover{
+  border-color: rgb(255, 0, 0);
+}
+
+.container-main{
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 0.8rem;
+  margin-bottom: 3rem;
+  padding: none;
+}
+
+
+.container1{
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.container2{
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 1px;
+  margin-bottom: 3rem;
+}
+
+.doanteblood-1{
+  margin-left: 5.8rem;
+  height: 20rem;
+  width: 25rem;
+  padding-top: 0.5rem;
+  box-shadow: 0 3px 3px 0 rgb(114, 110, 110);
+}
+
+.doanteblood-2{
+  margin-left: 3rem;
+  height: 20rem;
+  width: 25rem;
+  padding-top: 0.5rem;
+  box-shadow: 0 3px 3px 0 rgb(114, 110, 110);
+}
+
+.doanteblood-3{
+  margin-left: 3rem;
+  height: 20rem;
+  width: 25rem;
+  padding-top: 0.5rem;
+  box-shadow: 0 3px 3px 0 rgb(114, 110, 110);
+  /* float: right; */
 }
