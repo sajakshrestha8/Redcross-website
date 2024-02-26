@@ -26,3 +26,10 @@
 //   slides[slideIndex-1].style.display = "block";
 //   dots[slideIndex-1].className += " active";
 // }
+
+// JS for search bar validation
+if (Search == '') {
+    // Display an error message
+    document.getElementById('errorMessage').innerText = 'Please enter a search term.';
+    return false;
+}
