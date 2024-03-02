@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="Image/american-red-cross-logo-transparent-21.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type=module src=try.js></script>
+    <my-header></my-header><br><br>
+
+    <div class="Donor-form">
+        <div class="black-border">
+            <label class="donateform-note-head"><b>GIVE BLOOD </b></label><br>
+            <label class="donateform-note-head"><b>SAVE LIVES</b></label>
+        </div>
+    </div><br>
+
+    <label class="giveblood-heading"><b>Fill the Form to be a Blood Donation Member</b></label><br>
+
+    <div class="form">
+        <form id="RC1">
+    
+            <h2 class="formheader">Blood Donation Membership</h2>
+            <h3>Personal details</h3>
+            <label>Name: </label>
+            <input type="text" id=" Fname" placeholder="First Name" required class="input-text">
+            <input type="text" id=" Lname" placeholder="Last Name" required class="input-text"><br><br>
+    
+            <label>Email: </label>
+            <input type="email" id="email" placeholder="Email" required class="input-text"><br><br>
+    
+            <label>Blood Group:</label>
+            <select name="Bloodgroup" id="Group" class="input-text">
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select><br><br>
+    
+            <label for="Number">Phone number:</label>
+            <input type="tel" id="number" class="input-text" class="input-text"><br><br>
+    
+            <label for="PCR">PCR Test Report</label>
+            <input type="file" id="PCR" class="input-text" class="input-text">
+    
+            <div>
+            <!-- Temporary address -->
+            <div class="temp">
+            <h3>Temporary Address</h3>
+    
+            <label>Zone</label>
+            <select name="zone" id="zone" class="input-text">
+                <option value="Mahakali">Mahakali</option>
+                <option value="Seti">Seti</option>
+                <option value="Karnali">Karnali</option>
+                <option value="Bheri">Bheri</option>
+                <option value="`Rapti">Rapti</option>
+                <option value="Dhawaligiri">Dhawaligiri</option>
+                <option value="Lumbini">Lumbini</option>
+                <option value="Gandaki">Gandaki</option>
+                <option value="Bagmati">Bagmati</option>
+                <option value="Narayani">Narayani</option>
+                <option value="Janakpur">Juanakpur</option>
+                <option value="Sagarmatha">Sagarmatha</option>
+                <option value="Koshi">Koshi</option>
+                <option value="Mechi">Mechi</option>
+            </select><br><br>
+    
+            <label>DISTRICT</label>
+            <input type="text" alt="DISTRICT" id="DISTRICT" required class="input-text"><br><br>
+    
+            <label>Village/ Municipality: </label>
+            <input type="text" id="village" required class="input-text"><br><br>
+    
+            <label>Tole: </label>
+            <input type="text" id="tole" required class="input-text"><br><br>
+    
+            <label>Village/ Municipality: </label>
+            <input type="text" id="village" required class="input-text"><br><br>
+        
+    </div>
+    
+    <!-- permanent address -->
+    <div class="perm">
+    <h3>Permanent Address</h3>
+    
+    <label>Zone</label>
+    <select name="zone" id="zone" class="input-text">
+        <option value="Mahakali">Mahakali</option>
+        <option value="Seti">Seti</option>
+        <option value="Karnali">Karnali</option>
+        <option value="Bheri">Bheri</option>
+        <option value="`Rapti">Rapti</option>
+        <option value="Dhawaligiri">Dhawaligiri</option>
+        <option value="Lumbini">Lumbini</option>
+        <option value="Gandaki">Gandaki</option>
+        <option value="Bagmati">Bagmati</option>
+        <option value="Narayani">Narayani</option>
+        <option value="Janakpur">Juanakpur</option>
+        <option value="Sagarmatha">Sagarmatha</option>
+        <option value="Koshi">Koshi</option>
+        <option value="Mechi">Mechi</option>
+    </select><br><br>
+    
+    <label>DISTRICT</label>
+    <input type="text" alt="DISTRICT" id="DISTRICT" required class="input-text"><br><br>
+    
+    <label>Village/ Municipality: </label>
+    <input type="text" id="village" required class="input-text"><br><br>
+    
+    <label>Tole: </label>
+    <input type="text" id="tole" required class="input-text"><br><br>
+    
+    <label>Village/ Municipality: </label>
+    <input type="text" id="village" required class="input-text"><br><br>
+    </div>
+    
+    </div>
+    <button class="formsubmit" type="submit">Submit Form</button>
+    </form>
+    </div>
+    
+
+    <style>
+        .Donor-form{    
+            background-image: url(Image/Donate-blood.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 40rem;
+            height: 25rem;
+            margin-top: 3rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .black-border{
+            height: 100%;
+            width: 50%;
+            background-color: black;
+            opacity: 0.8;
+            padding-top: 5rem;
+        }
+
+        .donateform-note-head{
+            font-family: Poppins;
+            font-size: 60px;
+            color: white;
+            padding-left: 5rem;
+        }
+
+        .giveblood-heading{
+            font-family: Poppins;
+            font-size: 40px;
+            padding-left: 20rem;  
+        }
+
+        .input-text{
+            height: 1.7rem;
+            border-radius: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    </style>
+
+<script src=footer.js></script>
+<my-footer></my-footer>
+</body>
+</html>

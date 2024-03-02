@@ -1,5 +1,5 @@
 class sajak extends HTMLElement{
-    connectedCallback( ){
+    connectedCallback(){
         this.innerHTML = `<header>
         <nav class="hover" id="SearchForm" onsubmit="return validateSearch()">
             <ul>
@@ -11,16 +11,23 @@ class sajak extends HTMLElement{
                 <li><a href="Member.html"><b>Get involved?</b></a></li>
                 <li><a href="About.html"><b>About Us</b></a></li>
                 <li><a href="Contact.html"><b>Contact Us</b></a></li>
-                
+                <li><input type="search" id="search" class="searchbar" placeholder="Search.."></li>
             </ul>
-            <button type="submit" class="searchbtn"><img src="Image/1024px-Search_Icon.svg.png" alt="seach" class="search"></button>
-        </nav>
+                
+                <button type="submit" class="searchbtn" id="search" onclick="searchfunction()"><img src="Image/1024px-Search_Icon.svg.png" alt="search" class="search"></button><br>
+            </nav>
         </header>`
-        
+         
     }
 }
 
 customElements.define('my-header',sajak)
+
+function searchfunction(){
+    console.log("1");
+}
+
+
 
 
 // // When the user scrolls the page, execute myFunction
