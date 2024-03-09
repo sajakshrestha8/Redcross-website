@@ -1,8 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body{
   width: 100%;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .a {
@@ -60,7 +68,7 @@ nav{
 .image{
   height: 70px;
   cursor: pointer;
-  margin-left: -0.1rem;
+  margin-left: -2.5rem;
   float: left;
 }
 
@@ -69,7 +77,8 @@ nav ul{
   width: 100%;
   text-align: right;
   padding-right: 20px;
-  margin-right: 11rem;
+  margin-left: 5rem;
+  float: right;
 }
 
 nav ul li{
@@ -82,8 +91,7 @@ nav ul li a{
   text-decoration: none;
   font-family: Poppins;
   display: block;
-  padding: 14px 15px;
-
+  padding: 14px 10px;
 }
  
 nav ul li:hover{
@@ -391,18 +399,21 @@ footer{
 
 .membernav{
   background-color: #ccd9e3;
-  width: 30%;
+  width: 35%;
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 0;
   z-index: 10;
-  padding-top: 60px;
   font-family: Poppins;
   box-shadow: 3px 5px 10px 0 rgba(0,0,0,.2);
   border-radius: 10px;
-  float: left;  
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  padding-left: 9rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .Mnav1{
@@ -439,7 +450,8 @@ footer{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   transition:500ms ease;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
 }
 
 .form:hover{
@@ -486,11 +498,15 @@ footer{
 }
 
 .moneyinput{
+  font-family: Poppins;
+  padding-left: 0.6rem;
+  font-size: 15px;
   margin-top: 10px;
   margin-left: 55px;
-  border-radius: 3px;
-  height: 30px;
+  border-radius: 5px;
+  height: 2.45rem;
   width: 40%;
+  background-color: rgb(225, 225, 225);
 }
 
 .CountryO{
@@ -508,27 +524,27 @@ footer{
 }
 
 .info{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
 }
 
 .contacthead{
-  margin-left: 150px;
-  margin-top: 50px;
+  margin-left: 10rem;
+  margin-top: 8rem;
   margin-bottom: 50px;
   display: inline-block;
   margin-bottom: 30px;
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 60px;
   color: #ffffff;
   position: relative;
 }
 
 .contactcontainer{
   background-color: #2f2c2c;
-  height: 150px;
+  height: 250px;
   width: 100%;
   opacity: 50%;
 }
@@ -538,9 +554,10 @@ footer{
   width: 25%;
   padding-right : 20px;
   background-color: #ccd9e3;
-  margin-left: 80px;
+  margin-left: 14rem;
   margin-top: 4rem;
   padding-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .contacttitle{
@@ -548,13 +565,13 @@ footer{
   width: 30%;
   background-color: #ccd9e3;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 15px;
   margin-left: 30px;
 }
 
 .contactbody{
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 30px;
 }
 
@@ -565,7 +582,12 @@ footer{
 }
 
 .Cform{
+  margin-top: 4rem;
   float: right;
+  margin-left: 1rem;
+  height: auto;
+  margin-bottom: 2rem;
+  width: 50rem;
 }
 
 @media screen{
@@ -578,15 +600,14 @@ footer{
 }
 
 .search{
-  height: 30px;
-  padding: 0;
-
+  height: 21px;
 }
 
 .searchbtn{
   margin-top: 2px;
+  /* margin-right: 1rem; */
   margin-right: 2rem;
-  margin-left: -13.9rem;
+  margin-left: -3.4rem;
   border: 2px black solid;
   background-color: #ffffff;
   border-radius: 25px;
@@ -595,6 +616,11 @@ footer{
   border-bottom-left-radius: 0px;
   height: 2rem;
   width: 3rem;
+  padding-top: 3px;
+}
+
+.searchbtn img{
+  padding: 0.2rem;
 }
 
 .searchbtn:hover{
@@ -763,7 +789,7 @@ footer{
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 40px 80px;
-  margin: 10px 0;
+  margin: 0;
 }
 footer .col1
 {
@@ -786,12 +812,12 @@ footer .col2
 }
 
 .headermargin1{
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   background-color: #000000;
   opacity: 0.6;
   margin-left: 2.5rem;
   margin-right: 45rem;
-  height: 49.5rem;
+  height: 50rem;
   padding-top: 8rem;
   transition: all 600ms ease;
 }
@@ -896,14 +922,13 @@ footer .col2
 }
 
 .headermargin2{
-  margin-top: 2rem;
   background-color: #000000;
   opacity: 0.8;
   margin-left: 5.8rem;
   margin-right: 45rem;
   height: 25rem;
   padding-top: 5.5rem;
-  margin-top: 2.6rem;
+  margin-top: 2rem;
 }
 
 .givebloodheader2{
@@ -936,8 +961,8 @@ footer .col2
 
 .container-text{
   background-color: white;
-  margin-top: 18rem;
-  height: 4rem;
+  margin-top: 17rem;
+  height: 4.5rem;
   border: white;
   width: 80%;
   margin-left: -0.2rem;
@@ -1146,7 +1171,7 @@ footer .col2
 .yt-video{
   margin-left: 25rem;
   height: 15rem;
-  width: 25rem;
+  width: 5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1171,7 +1196,50 @@ footer .col2
 }
 
 .searchbar{
-  font-family: Poppins;
   border-radius: 25px;
   height: 2rem;
+  padding-left: 1rem;
+}
+
+.labelright{
+  margin-left: 17rem;
+  font-size: 20px;
+
+}
+
+.subject{
+  font-family: Poppins;
+  padding-left: 0.6rem;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 55px;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 88%;
+  background-color: rgb(225, 225, 225);
+}
+
+.formhead{
+  font-size: 20px;
+  margin-left: 3.5rem;
+}
+
+.messege{
+  padding-left: 0.6rem;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 55px;
+  border-radius: 5px;
+  height: auto;
+  width: 88%;
+  background-color: rgb(225, 225, 225);
+}
+
+.Contact-form-submit{
+  border-radius: 4px;
+  width: 5rem;
+  margin-left: 55px;
+  background-color: rgb(255, 34, 34);
+  color: white;
+  font-size: 15px;
 }

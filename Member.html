@@ -8,28 +8,116 @@
     
     <body>
         <script type=module src=try.js></script>
-        <my-header></my-header>
+        <my-header></my-header><br><br>
 
-        <div>
-        <div class="membernav">
-           <div class="Mnav1"><button id="btn" onclick="showForm(1)" class="sidebtn">Redcross Membership</button></div><br>
-           <div><button id="btn1" onclick="showForm(2)" class="sidebtn">Blood Donation Membership</button></div><br>
-           <button id="btn1" onclick="showForm(3)" class="sidebtn">Volunter Membership</button>
+        <style>
+            body{
+                background-image: url(Image/membership.png);
+                background-repeat: no-repeat;
+                background-size: 88% 25rem;
+                background-origin: content-box;
+                background-position: 5.8rem 5rem;
+            }
+
+            .membership-form-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                margin-left: 6rem;
+            }
+
+            .membership-form{
+                margin-top: 30rem;
+                background-color: #ffffff;
+                height: 20rem;
+                width: 20rem;
+                text-align: center;
+                padding-top: 0.5rem;
+                border: 1px solid red;
+                transition:all 300ms ease;
+            }
+
+            .membership-form:hover{
+                box-shadow: 0 5px 5px 0 rgb(104, 104, 104);
+            }
+
+            .membership-form-head{
+                font-size: 20px;
+                width: 19rem;
+                height: 8rem;
+                background-color: #e5e5e5;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+            }
+
+            .membership-form-body{
+                padding-top: 2rem;
+                font-size: 13px;
+                line-height: 130%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                color: rgb(66, 65, 65);
+            }
+
+            .membership-button{
+                margin-top: 2rem;
+                background-color: #E11B22;
+                color: white;
+                width: 7rem;
+                height: 1.5rem;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .close{
+                border: none;
+            }
+
+        </style>
+    <div class="membership-form-grid">
+        <div class="membership-form">
+            <div class="membership-form-head">
+            <label><b>Want to be a Redcross member?</b></label>
         </div>
-        
+            <div class="membership-form-body">
+            <label > Redcross membership leads you to be the member of Nepal Red Cross Society, where you can be involved in multiple Red Cross activities.</label>
+        </div>
+        <div>
+            <button onclick="showForm(1)" class="membership-button"><b>Be a Member</b></button>
+        </div>
+        </div>
 
+        <div class="membership-form">
+            <div class="membership-form-head">
+            <label><b>Want to be a Red Cross Volunter?</b></label>
+        </div>
+            <div class="membership-form-body">
+            <label > Red Cross volunteer helps the Nepal Red Cross Society during the needed time like natural disasters and organizing the different Campaings.</label>
+        </div>
+        <div>
+            <button onclick="showForm(3)" class="membership-button"><b>Be a Member</b></button>
+        </div>
+        </div>
+
+        <div class="membership-form">
+            <label class="membership-form-head"><b>Want to be a Redcross member?</b></label>
+        </div>
+    </div>
         <!-- Form for Redcross membership -->
         <div class="form">
         <form id="RC">
+            <button onclick="closeForm()" class="close"><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
 
             <h2 class="formheader">Redcross Membership</h2>
             <h3>Personal details</h3>
             <label>Name: </label>
-            <input type="text" id=" Fname" placeholder="First Name" required>
-            <input type="text" id=" Lname" placeholder="Last Name" required><br><br>
+            <input type="text" id=" Fname" placeholder="First Name">
+            <input type="text" id=" Lname" placeholder="Last Name"><br><br>
 
             <label>Email: </label>
-            <input type="email" id="email" placeholder="Email" required><br><br>
+            <input type="email" id="email" placeholder="Email"><br><br>
 
             <label for="Number">Phone number:</label>
             <input type="tel" id="number"><br><br>
@@ -60,16 +148,16 @@
             </select><br><br>
 
             <label>DISTRICT:</label>
-            <input type="text" alt="DISTRICT" id="DISTRICT" required><br><br>
+            <input type="text" alt="DISTRICT" id="DISTRICT"><br><br>
 
             <label>Village/ Municipality: </label>
-            <input type="text" id="village" required><br><br>
+            <input type="text" id="village"><br><br>
 
             <label>Tole: </label>
-            <input type="text" id="tole" required><br><br>
+            <input type="text" id="tole"><br><br>
 
             <label>Village/ Municipality: </label>
-            <input type="text" id="village" required><br><br>
+            <input type="text" id="village"><br><br>
         
     </div>
 
@@ -96,16 +184,16 @@
     </select><br><br>
 
     <label>DISTRICT</label>
-    <input type="text" alt="DISTRICT" id="DISTRICT" required><br><br>
+    <input type="text" alt="DISTRICT" id="DISTRICT"><br><br>
 
     <label>Village/ Municipality: </label>
-    <input type="text" id="village" required><br><br>
+    <input type="text" id="village"><br><br>
 
     <label>Tole: </label>
-    <input type="text" id="tole" required><br><br>
+    <input type="text" id="tole"><br><br>
 
     <label>Village/ Municipality: </label>
-    <input type="text" id="village" required><br><br>
+    <input type="text" id="village"><br><br>
     </div>
 
 </div>
@@ -113,7 +201,14 @@
 </form>
 </div>
 
+<div class="form">
+    <form id="RC1">
 
+        
+
+    </form>
+
+</div>
 
 <div class="form">
     <form id="RC2">
@@ -121,11 +216,11 @@
         <h2 class="formheader">Volunter Membership</h2>
         <h3>Personal details</h3>
         <label>Name: </label>   
-        <input type="text" id=" Fname" placeholder="First Name" required>
-        <input type="text" id=" Lname" placeholder="Last Name" required><br><br>
+        <input type="text" id=" Fname" placeholder="First Name">
+        <input type="text" id=" Lname" placeholder="Last Name"><br><br>
 
         <label>Email: </label>
-        <input type="email" id="email" placeholder="Email" required><br><br>
+        <input type="email" id="email" placeholder="Email"><br><br>
 
         <label for="Number">Phone number:</label>
         <input type="tel" id="number"><br><br>
@@ -154,16 +249,16 @@
         </select><br><br>
 
         <label>DISTRICT</label>
-        <input type="text" alt="DISTRICT" id="DISTRICT" required><br><br>
+        <input type="text" alt="DISTRICT" id="DISTRICT"><br><br>
 
         <label>Village/ Municipality: </label>
-        <input type="text" id="village" required><br><br>
+        <input type="text" id="village"><br><br>
 
         <label>Tole: </label>
-        <input type="text" id="tole" required><br><br>
+        <input type="text" id="tole"><br><br>
 
         <label>Village/ Municipality: </label>
-        <input type="text" id="village" required><br><br>
+        <input type="text" id="village"><br><br>
     
 </div>
 
@@ -190,7 +285,7 @@
 </select><br><br>
 
 <label>DISTRICT</label>
-<input type="text" alt="DISTRICT" id="DISTRICT" required><br><br>
+<input type="text" alt="DISTRICT" id="DISTRICT"><br><br>
 
 <label>Village/ Municipality: </label>
 <input type="text" id="village" required><br><br>
@@ -231,9 +326,17 @@
             btn1.style.display = "none";
             btn2.style.display = "block";
         }
+
+        function closeForm(){
+            const form = document.getElementById(RC);
+            RC.style.display = "none"; 
+        }
     };
 </script>       
 </div>
+
+<script src="footer.js"></script>
+<my-footer></my-footer>
 
    </body>     
 </html>
