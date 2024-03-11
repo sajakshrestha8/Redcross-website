@@ -333,10 +333,14 @@ nav ul li a:hover{
 
 .news{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-left: 4rem;
+  background-size: cover;
+  width: 30rem;
+  height: 20rem;
   aspect-ratio: 4/3 auto;
+  margin-top: 2rem;
+  z-index: 1;
+  margin-bottom: 5rem;
 }
 
 .formheader{
@@ -353,7 +357,9 @@ nav ul li a:hover{
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
 
 .formsubmit{
   background-color:#e50b0b;
@@ -365,6 +371,7 @@ nav ul li a:hover{
   width: 20%;
   margin-left: 40%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 1rem;
 }
 
 .formsubmit:hover{
@@ -442,16 +449,17 @@ footer{
   width: 65%;
   border-radius: 10px;
   font-family: Poppins;
-  margin-left: 18rem;
+  display: flex;
   justify-content: center;
-  padding-top: 1rem;
+  margin-left: 18rem;
+  padding-top: 0rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   transition:500ms ease;
   margin-top: 1rem;
-  margin-bottom: -2rem;
+  margin-bottom: 1rem;
 }
 
 .form:hover{
@@ -459,12 +467,22 @@ footer{
 }
 
 .temp{
+  padding-top: 2rem;
   float: left;
+}
+
+.temp > h3{
+  padding-bottom: 0.8rem;
 }
 
 .perm{
   float: right;
   margin-left: 100px;
+  padding-top: 2rem;
+}
+
+.perm > h3{
+  padding-bottom: 0.8rem;
 }
 
 .donateheader{
@@ -476,10 +494,9 @@ footer{
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
   height: 100%;
   width: 60%;
-  background-color: #d8dfe4;
+  background-color: #f4ebeb;
   border-radius: 10px;
   opacity: 100%;
   box-shadow: 10px 10px 10px 0 rgba(0,0,0,.2);
@@ -506,15 +523,16 @@ footer{
   border-radius: 5px;
   height: 2.45rem;
   width: 40%;
-  background-color: rgb(225, 225, 225);
+  background-color: #f3f3f3;
 }
 
 .CountryO{
   margin-top: 10px;
   margin-left: 55px;
-  border-radius: 3px;
-  height: 35px;
+  border-radius: 5px;
+  height: 40px;
   width: 87%;
+  background-color: #f3f3f3;
 }
 
 
@@ -1126,7 +1144,7 @@ footer .col2
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
   justify-content: center;
@@ -1145,7 +1163,6 @@ footer .col2
   transition: 300ms ease;
   object-fit: cover;
   width: 100%;
-
 }
 
 .CPRdesc-img:hover{

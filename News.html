@@ -10,20 +10,176 @@
     
     <body>
         <script type=module src=try.js></script>
-        <my-header></my-header><br><br><br><br>
+        <my-header></my-header><br><br>
 
+        <style>
+            body{
+                background-image: url(Image/News-cover-page.jpg);
+                background-repeat: no-repeat;
+                background-size: 1700px 600px;
+                background-origin: content-box;
+                background-position: 0px 0px;
+                background-attachment: fixed;
+            }
 
-        <h2 style="text-align: center; font-family: Poppins;">Rcampaign News Updates</h2>
-        <img src="image/Rcampaign.jpg" alt="news 1" height="25%" width="25%" class="news">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium exercitationem voluptas nostrum fugit voluptatem? Explicabo odio dolor accusantium dicta tenetur. Voluptatem, blanditiis! Perspiciatis nulla dolor a, omnis quia sed!</p>
+            .transparent-backgrouond{
+                height: 15rem;
+                background-color: black;
+                opacity: 0.6;
+                padding-top: 6rem;
+                padding-left: 15rem;
+            }
+
+            .News-cover-text{
+                font-size: 50px;    
+                color: white;
+            }
+
+            .news-update{
+                padding-bottom: 5rem;
+                float: left;
+                padding-left: 1rem;
+                background-color: rgb(234, 234, 234);
+                margin-left: 5rem;
+                padding-right: 4rem;
+            }
+
+            .Ememrgency-News-and-updates{
+                font-size: 40px;
+                color: rgb(247, 77, 77);
+            }
+
+            .news-desc{
+                height: 8rem;
+                width: 28rem;
+                text-align: justify;
+                margin-top: -10rem;
+                margin-left: 5rem;
+                margin-bottom: 5rem;
+                background: rgb(255, 255, 255);
+                position: absolute;
+                border-radius: 5px;
+                padding-top: 0.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .news-content{
+                position: relative;
+            }
+
+            .news-image{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            .news-heading{
+                margin-left: 6rem;
+                font-size: 30px;
+            }
+
+            .news-grid{
+                display: flex;
+                background-color: white;
+            }
+
+            .emergency-news{
+                float: right;
+                margin-left: 10rem;
+                background-color: #e5e5e5;
+                padding-left: 2rem;
+                padding-right: 4rem;
+            }
+
+            .emergency-heading{
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                padding-left: 2rem;
+                padding-top: 1rem;
+            }
+
+            .emergency-image{
+                display: block;
+                margin-left: 3rem;
+                background-size: cover;
+                width: 30rem;
+                height: 20rem;
+                aspect-ratio: 4/3 auto;
+                margin-top: 2rem;
+                z-index: 1;
+                margin-bottom: 5rem;
+            }
+
+            .emergency-image-in{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+
+            .emergency-desc{
+                height: 8rem;
+                width: 28rem;
+                text-align: justify;
+                margin-top: -10rem;
+                margin-left: 4rem;
+                margin-bottom: 5rem;
+                background: rgb(255, 255, 255);
+                position: absolute;
+                border-radius: 5px;
+                border-radius: 5px;
+                padding-top: 0.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        </style>
+
+        <div class="transparent-backgrouond">
+            <div class="News-cover-text"><label><b>News</b></label></div>
         </div>
 
-        <h2 style="text-align: center; font-family: Poppins;">Volunteer_Convention_2023</h2>
-        <img src="image/Volunteer_Convention_2023_Cover.jpg" alt="news 1" height="25%" width="25%" class="news">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium exercitationem voluptas nostrum fugit voluptatem? Explicabo odio dolor accusantium dicta tenetur. Voluptatem, blanditiis! Perspiciatis nulla dolor a, omnis quia sed!</p>
+        <div class="news-grid">
+        <div class="news-update">
+            <div>
+                <label class="Ememrgency-News-and-updates"><b>News And Updates</b></label>
+            </div>
+            <label style="text-align: left; font-family: Poppins; padding-top: 1rem;" class="news-heading">Rcampaign News Updates</label>
+                <div class="news-content">
+                <div  class="news">
+                    <img src="Image/Rcampaign.jpg" alt="news 1" class="news-image">
+                </div>
+                <div class="news-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium exercitationem voluptas nostrum fugit voluptatem? Explicabo odio dolor accusantium dicta tenetur. Voluptatem, blanditiis! Perspiciatis nulla dolor a, omnis quia sed!</p>
+                </div>
+                </div>
+
+                    <label style="text-align: left; font-family: Poppins;" class="news-heading">Volunteer_Convention_2023</label>
+                    <img src="image/Volunteer_Convention_2023_Cover.jpg" alt="news 1" height="25%" width="25%" class="news">
+                    <div class="news-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium exercitationem voluptas nostrum fugit voluptatem? Explicabo odio dolor accusantium dicta tenetur. Voluptatem, blanditiis! Perspiciatis nulla dolor a, omnis quia sed!</p>
+                </div>
+            </div>
+
+            <div  class="emergency-news">
+                <div>
+                    <label class="Ememrgency-News-and-updates"><b>Emergency Updates</b></label>
+                </div>
+                <div>
+                    <label class="emergency-heading">Ememrgency Blood Requirement</label>
+                </div>
+                <div class="emergency-image">
+                    <img src="Image/emergency-blood-requirement.jpg" alt="emergency-blood-requirement" class="emergency-image-in">
+                </div>
+
+                <div class="emergency-desc">
+                    <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit hic consequuntur enim dolor ratione! Corporis delectus ipsa aspernatur deleniti. Voluptatem harum quos a natus quis, consectetur eaque minima esse?</label>
+                </div>
+            </div>
+
         </div>
+
+
         
         <script src=footer.js></script>
       <my-footer></my-footer>
