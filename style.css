@@ -332,10 +332,10 @@ nav ul li a:hover{
 }
 
 .news{
-  display: block;
-  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
   background-size: cover;
-  width: 30rem;
+  width: 60rem;
   height: 20rem;
   aspect-ratio: 4/3 auto;
   margin-top: 2rem;
