@@ -36,25 +36,31 @@
             }
 
             .news-update{
+                padding-top: 1rem;
                 padding-bottom: 5rem;
                 float: left;
-                padding-left: 1rem;
                 background-color: rgb(234, 234, 234);
-                margin-left: 5rem;
-                padding-right: 4rem;
+                margin-left: 9rem;
+            }
+
+            .News-and-updates{
+                font-size: 40px;
+                color: rgb(247, 77, 77);
+                display: flex;
+                justify-content: center;
             }
 
             .Ememrgency-News-and-updates{
-                font-size: 40px;
-                color: rgb(247, 77, 77);
+                font-size: 20px;
+                color: rgb(247, 77, 77);    
             }
 
             .news-desc{
                 height: 8rem;
-                width: 28rem;
+                width: 30rem;
                 text-align: justify;
                 margin-top: -10rem;
-                margin-left: 5rem;
+                margin-left: 15rem;
                 margin-bottom: 5rem;
                 background: rgb(255, 255, 255);
                 position: absolute;
@@ -69,14 +75,15 @@
             }
 
             .news-image{
-                width: 100%;
-                height: 100%;
+                width: 60%;
+                height: 90%;
                 border-radius: 5px;
             }
 
             .news-heading{
-                margin-left: 6rem;
                 font-size: 30px;
+                display: flex;
+                justify-content: center;
             }
 
             .news-grid{
@@ -85,22 +92,26 @@
             }
 
             .emergency-news{
-                float: right;
-                margin-left: 10rem;
+                margin-left: 8rem;
                 background-color: #e5e5e5;
                 padding-left: 2rem;
                 padding-right: 4rem;
-            }
-
-            .emergency-heading{
-                display: flex;
-                justify-content: center;
-                font-size: 30px;
-                padding-left: 2rem;
+                width: 18rem;
                 padding-top: 1rem;
             }
 
-            .emergency-image{
+            .emergency-heading{
+                font-size: 18px;
+                padding-left: 0.1rem;
+                padding-top: 1rem;
+            }
+
+            .emergency-desc-data{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            /* .emergency-image{
                 display: block;
                 margin-left: 3rem;
                 background-size: cover;
@@ -110,7 +121,7 @@
                 margin-top: 2rem;
                 z-index: 1;
                 margin-bottom: 5rem;
-            }
+            } */
 
             .emergency-image-in{
                 width: 100%;
@@ -119,19 +130,14 @@
             }
 
             .emergency-desc{
-                height: 8rem;
-                width: 28rem;
-                text-align: justify;
-                margin-top: -10rem;
-                margin-left: 4rem;
+                height: 15rem;
+                width: 16rem;
                 margin-bottom: 5rem;
-                background: rgb(255, 255, 255);
-                position: absolute;
                 border-radius: 5px;
                 border-radius: 5px;
-                padding-top: 0.5rem;
-                padding-left: 1rem;
+                padding-left: 0.1rem;
                 padding-right: 1rem;
+                font-size: 12px;
             }
         </style>
 
@@ -139,10 +145,12 @@
             <div class="News-cover-text"><label><b>News</b></label></div>
         </div>
 
+
+        <!-- Starting of news section -->
         <div class="news-grid">
         <div class="news-update">
             <div>
-                <label class="Ememrgency-News-and-updates"><b>News And Updates</b></label>
+                <label class="News-and-updates"><b>News And Updates</b></label>
             </div>
             <label style="text-align: left; font-family: Poppins; padding-top: 1rem;" class="news-heading">Rcampaign News Updates</label>
                 <div class="news-content">
@@ -155,31 +163,58 @@
                 </div>
 
                     <label style="text-align: left; font-family: Poppins;" class="news-heading">Volunteer_Convention_2023</label>
-                    <img src="image/Volunteer_Convention_2023_Cover.jpg" alt="news 1" height="25%" width="25%" class="news">
+                    <div class="news">
+                        <img src="image/Volunteer_Convention_2023_Cover.jpg" alt="news 1" class="news-image">
+                    </div>
                     <div class="news-desc">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium exercitationem voluptas nostrum fugit voluptatem? Explicabo odio dolor accusantium dicta tenetur. Voluptatem, blanditiis! Perspiciatis nulla dolor a, omnis quia sed!</p>
                 </div>
             </div>
 
+            <!-- end of news section -->
+
+            <!-- start of emergency news section -->
+
             <div  class="emergency-news">
                 <div>
                     <label class="Ememrgency-News-and-updates"><b>Emergency Updates</b></label>
                 </div>
-                <div>
-                    <label class="emergency-heading">Ememrgency Blood Requirement</label>
-                </div>
-                <div class="emergency-image">
-                    <img src="Image/emergency-blood-requirement.jpg" alt="emergency-blood-requirement" class="emergency-image-in">
+                
+
+                <div class="emergency-desc-data"></div>
+                <div class="emergency-desc">
+                    <h3>Title:</h3>
+                    <label><b>Emergency Blood Requirement</b></label>
+                    <h4>Name:</h4>
+                    <label>Sajak</label>
+                    <h4>Location:</h4>
+                    <label>Kathhmandu</label>
+                    <h4>Phone Number:</h4>
+                    <label for="">98000000</label>
+                    <h4>Description:</h4>
+                    <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non aliquid dolor minus sequi cumque harum praesentium distinctio doloribus, quasi tempora quisquam odio pariatur sed fuga minima deleniti nam perferendis!
+                    </label><hr>
                 </div>
 
                 <div class="emergency-desc">
-                    <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit hic consequuntur enim dolor ratione! Corporis delectus ipsa aspernatur deleniti. Voluptatem harum quos a natus quis, consectetur eaque minima esse?</label>
+                    <h4>Name:</h4>
+                    <label>Sajak</label>
+                    <h4>Location:</h4>
+                    <label>Kathhmandu</label>
+                    <h4>Phone Number:</h4>
+                    <label for="">98000000</label>
+                    <h4>Description:</h4>
+                    <label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non aliquid dolor minus sequi cumque harum praesentium distinctio doloribus, quasi tempora quisquam odio pariatur sed fuga minima deleniti nam perferendis!
+                    </label><hr>
                 </div>
+                
             </div>
+
+            
 
         </div>
 
-
+        <!-- End of emergency news section -->
         
         <script src=footer.js></script>
       <my-footer></my-footer>

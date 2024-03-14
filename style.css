@@ -332,10 +332,10 @@ nav ul li a:hover{
 }
 
 .news{
-  display: block;
-  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
   background-size: cover;
-  width: 30rem;
+  width: 60rem;
   height: 20rem;
   aspect-ratio: 4/3 auto;
   margin-top: 2rem;
@@ -647,11 +647,12 @@ footer{
   transition: 0.5s;
 }
 
-.container{
+.blood-container{
   display: inline-block;
   margin-top: 10rem;
-  margin-left: 7rem;
+  margin-left: 6rem;
   margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .doanteblood{
