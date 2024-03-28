@@ -1,0 +1,126 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} */
+body{
+    display: flex;
+}
+/* .wrapper{
+    display: flex;
+} */
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #ffffff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    /* background: rgba(113, 99, 186, 255); */
+    /* background-color: #dc143c; */
+    background-color: #662549;
+}
+/* .sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+} */
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, .active{
+    background: #e0e0e058;
+}
+.menu a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+/* .menu a span{
+    overflow: hidden;
+} */
+.logout{
+    position: absolute;
+    /* margin-top: 1.7em; */
+    width: 100%;
+}
+
+.main-content{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    /* width: calc(100% - 240px); */
+    padding: 1rem;
+}
+.content-header img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.content-title{
+    /* color: rgba(113, 99, 186, 255); */
+    color: #dc143c;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search-box{
+    background: rgb(237, 237, 237);
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.search-box input{
+    background: transparent;
+    padding: 10px;
+}
+
+.card-container{
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
